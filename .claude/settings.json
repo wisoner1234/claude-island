@@ -14,7 +14,9 @@
       "Bash(xcodebuild build:*)",
       "Bash(log show:*)",
       "Bash(tccutil list:*)",
-      "Bash(xcodebuild -scheme ClaudeIsland -configuration Release -derivedDataPath build CODE_SIGN_IDENTITY=\"-\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO build)"
+      "Bash(xcodebuild -scheme ClaudeIsland -configuration Release -derivedDataPath build CODE_SIGN_IDENTITY=\"-\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO build)",
+      "Bash(xcodebuild -scheme ClaudeIsland -configuration Release build)",
+      "Bash(xcodebuild -project ClaudeIsland.xcodeproj -scheme ClaudeIsland build)"
     ]
   }
 }

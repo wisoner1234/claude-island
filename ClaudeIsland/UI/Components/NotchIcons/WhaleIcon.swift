@@ -79,6 +79,7 @@ struct WhaleIcon: View {
             drawRects(eye, fillColor: .black)
         }
         .frame(width: size, height: size)
+        .frame(width: size * (66.0 / 52.0), height: size, alignment: .center)
         .onReceive(timer) { _ in
             if animate { phase += 1 }
         }

@@ -79,7 +79,8 @@ struct CatIcon: View {
             // Draw nose
             drawRects(nose, fillColor: Color(red: 1.0, green: 0.6, blue: 0.5))
         }
-        .frame(width: size * 1.1, height: size)
+        .frame(width: size, height: size)
+        .frame(width: size * (66.0 / 52.0), height: size, alignment: .center)
         .onReceive(timer) { _ in
             if animate { phase = (phase + 1) % 3 }
         }

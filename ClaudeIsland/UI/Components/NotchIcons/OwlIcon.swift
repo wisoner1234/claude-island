@@ -96,6 +96,7 @@ struct OwlIcon: View {
             drawRects(feet, fillColor: Color(red: 1.0, green: 0.7, blue: 0.2))
         }
         .frame(width: size, height: size)
+        .frame(width: size * (66.0 / 52.0), height: size, alignment: .center)
         .onReceive(timer) { _ in
             if animate { phase += 1 }
         }
