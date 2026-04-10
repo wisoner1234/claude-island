@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Applications/**)",
+      "Bash(xcode-select -p)",
+      "Bash(xcodebuild -scheme ClaudeIsland -configuration Release -derivedDataPath build DSTROOT=build/dst OBJROOT=build/obj SYMROOT=build/sym)",
+      "Bash(xcodebuild -scheme ClaudeIsland -configuration Release -derivedDataPath build DSTROOT=build/dst OBJROOT=build/obj SYMROOT=build/sym CODE_SIGN_IDENTITY=\"-\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO)",
+      "Bash(xcodebuild -resolvePackageDependencies -scheme ClaudeIsland)",
+      "Bash(xcodebuild -scheme ClaudeIsland -configuration Release -derivedDataPath build CODE_SIGN_IDENTITY=\"-\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO)",
+      "Bash(open \"/Users/github/claude-island/build/Build/Products/Release/Claude Island.app\")",
+      "Bash(pkill -f \"Claude Island\")",
+      "Bash(killall \"Claude Island\")",
+      "Bash(open \"/Users/tao.liu/Library/Developer/Xcode/DerivedData/ClaudeIsland-exuzfolnumexedauhvwpvqybzmru/Build/Products/Debug/Claude Island.app\")",
+      "Bash(xcodebuild build:*)",
+      "Bash(log show:*)",
+      "Bash(tccutil list:*)",
+      "Bash(xcodebuild -scheme ClaudeIsland -configuration Release -derivedDataPath build CODE_SIGN_IDENTITY=\"-\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO build)"
+    ]
+  }
+}
